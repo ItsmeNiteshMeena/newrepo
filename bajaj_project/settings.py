@@ -22,6 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-jm^j&)cw^71vdc((4&k2rzp-l*ychz$=klox-oz%&t7-*#f4t@'
 
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
